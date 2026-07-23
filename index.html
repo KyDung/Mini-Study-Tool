@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini Web Hub - thu vien mini web hoc tap, code va tien ich lop hoc.">
+    <link rel="icon" href="data:,">
+    <title>Mini Web Hub</title>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="tools-data.js?v=5" defer></script>
+    <script src="script.js?v=4" defer></script>
+    <link rel="stylesheet" href="styles.css?v=3">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Mini Web Hub">
+        <span class="brand-mark">mw</span>
+        <span>miniweb<span class="brand-accent">:</span>hub</span>
+      </a>
+      <nav class="site-nav" aria-label="Dieu huong chinh">
+        <a href="#categories">Chủ đề</a>
+            <a href="#featured">Đã ghim</a>
+        <a href="#tools">Tất cả tool</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy hero-reveal">
+          <p class="kicker">Mini Web Hub</p>
+          <h1 id="hero-title">Mở đúng tool.<br>Học dễ hơn.</h1>
+          <p class="hero-text">Tìm nhanh các mini web cho học tập, code và hoạt động trong lớp.</p>
+          <div class="search-area">
+            <label class="search-box" for="searchInput">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input id="searchInput" type="search" autocomplete="off" aria-label="Tìm tool, môn học hoặc tag" placeholder="Tìm tool, môn học, tag...">
+              <button id="clearSearch" type="button" aria-label="Xoa tim kiem">
+                <i data-lucide="x" aria-hidden="true"></i>
+              </button>
+            </label>
+            <div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Kết quả tìm kiếm" hidden></div>
+          </div>
+          <div class="hero-stats" aria-label="Thong ke thu vien">
+            <span><strong id="toolCount">0</strong> tool đang có</span>
+            <span><strong id="categoryCount">0</strong> nhóm chủ đề</span>
+          </div>
+        </div>
+        <figure class="hero-media hero-reveal">
+          <img src="assets/learning-lab-hero.png" alt="Bo cong cu hoc tap va lap trinh tren ban lam viec" fetchpriority="high">
+        </figure>
+      </section>
+
+      <section class="category-section" id="categories" aria-labelledby="category-title">
+        <div class="section-intro" data-reveal>
+          <p class="kicker">Chọn nhanh</p>
+          <h2 id="category-title">Bạn cần làm gì hôm nay?</h2>
+        </div>
+        <div id="categoryTabs" class="category-tabs" role="tablist" aria-label="Danh sach chu de"></div>
+      </section>
+
+      <section class="featured-section" id="featured" aria-labelledby="featured-title">
+        <div class="section-intro section-intro--wide" data-reveal>
+          <p class="kicker">Truy cập nhanh</p>
+          <h2 id="featured-title">Mini web đã ghim</h2>
+        </div>
+        <div id="featuredGrid" class="featured-grid"></div>
+      </section>
+
+      <section class="tools-section" id="tools" aria-labelledby="tools-title">
+        <div class="tools-heading" data-reveal>
+          <div>
+            <p class="kicker">Thư viện</p>
+            <h2 id="tools-title">Toàn bộ mini web</h2>
+          </div>
+          <div class="tools-controls">
+            <span id="resultMeta" class="result-meta" aria-live="polite"></span>
+          </div>
+        </div>
+        <div id="toolGrid" class="tool-grid"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <i data-lucide="search-x" aria-hidden="true"></i>
+          <h3>Chưa có tool phù hợp</h3>
+          <p>Thử đổi từ khóa hoặc chọn lại chủ đề.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top">
+        <span class="brand-mark">mw</span>
+        <span>miniweb<span class="brand-accent">:</span>hub</span>
+      </a>
+      <span>Tự học, làm nhanh, dùng lại.</span>
+    </footer>
+  </body>
+</html>

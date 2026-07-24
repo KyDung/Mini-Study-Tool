@@ -37,7 +37,9 @@ window.MINI_WEB_HUB = {
     {
       id: "chia-doi-random",
       title: "Chia đội random",
-      description: "Chia lớp thành các đội ngẫu nhiên, cân bằng và dùng nhanh trong hoạt động nhóm.",
+      description:
+        "Chia lớp thành các đội ngẫu nhiên, cân bằng và dùng nhanh trong hoạt động nhóm.",
+      image: "assets/ChiaDoiRandom.png",
       category: "classroom",
       url: "https://teams.mini-study-tool.online/",
       tags: ["chia doi", "random", "lop hoc"],
@@ -48,7 +50,9 @@ window.MINI_WEB_HUB = {
     {
       id: "phan-cho-ngoi-random",
       title: "Phân chỗ ngồi random",
-      description: "Tạo sơ đồ chỗ ngồi ngẫu nhiên cho lớp học và xuất kết quả nhanh.",
+      description:
+        "Tạo sơ đồ chỗ ngồi ngẫu nhiên cho lớp học và xuất kết quả nhanh.",
+      image: "assets/PhanChoNgoiRandom.png",
       category: "classroom",
       url: "https://seats.mini-study-tool.online/",
       tags: ["cho ngoi", "random", "lop hoc"],
@@ -59,7 +63,9 @@ window.MINI_WEB_HUB = {
     {
       id: "irregular-verbs-360",
       title: "Irregular Verbs 360",
-      description: "Luyện tập 360 động từ bất quy tắc tiếng Anh bằng flashcard và mini game.",
+      description:
+        "Luyện tập 360 động từ bất quy tắc tiếng Anh bằng flashcard và mini game.",
+      image: "assets/IrregularVerbs.png",
       category: "english",
       url: "https://verbs.mini-study-tool.online/",
       tags: ["tieng anh", "dong tu bat quy tac", "mini game"],
